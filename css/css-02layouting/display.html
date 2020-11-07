@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* 
+        display : inline inline-block block none
+        inline = !new line, width and height same as content parent, !change -> height and weight, margin and padding just change for x-asis (horizontal exclud img tag) {b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea}
+
+        inline-block : make height and weight work stakced for y-axis but inline x-asis
+
+        block: stakced for y-axis
+
+        none: bye
+        */
+        .nav ul li{
+            display: inline;
+            background-color: hotpink;
+        }
+        .img {
+            width: 100px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Title</h1>
+    </div>
+    <div class="nav">
+        <ul>
+            <li href="#">link 1</li>
+            <li href="#">link 2</li>
+            <li href="#">link 3</li>
+            <li href="#">link 4</li>
+            <li href="#">link 5</li>
+        </ul>
+    </div>
+    <div class="main">
+        <img class="img" src="./asset/tree.png" alt="" srcset="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ut, commodi quod atque illum laborum soluta, est et distinctio ratione labore consectetur blanditiis voluptatibus cum nesciunt veritatis! Assumenda, aspernatur fugiat! Numquam perferendis iure nisi quaerat animi recusandae ab iusto praesentium, culpa ipsa itaque optio, magnam officia voluptatem! Vero neque assumenda quas odit voluptates officiis, praesentium perferendis explicabo? Alias ut fugiat eveniet. Esse minima itaque voluptatum impedit modi labore quos hic deleniti? Ipsa iusto necessitatibus, accusantium officiis officia quisquam quis accusamus repellat quidem nulla dolor eum, excepturi sequi dolores autem dolore est odit quas quae? Rerum voluptate eius praesentium unde mollitia.</p>
+    </div>
+</body>
+</html>
