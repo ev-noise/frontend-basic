@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        psuedo class
+        :link style default anchor
+        :hover when mouse on element
+        :active if cliked link (active state)
+        :visited if before cliked (same browser)
+        */
+        .hello:link{
+            color:aqua
+        }
+
+        .hello:hover{
+            color: black;
+        }
+
+        .hello:active{
+            font-weight: bold;
+        }
+
+        .hello:visited{
+            color: red;
+        }
+
+        /*
+        :first-child first element from parent
+        :last-child last element from parent
+        :nth-child(n) choose for n element from parent //ex : (n) -> (1), (2n), (3n+2), (4n-1), (odd), (even)
+        */
+
+        li:first-child a{
+            color: blue;
+        }
+
+        li:last-child a{
+            color: green;
+        }
+
+        li:nth-child(2n+1) a{
+            color: red;
+        }
+
+        li:nth-child(3n+1) a{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="hello">hello</a>
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="#">link 5</a></li>
+        <li><a href="#">link 6</a></li>
+        <li><a href="#">link 7</a></li>
+        <li><a href="#">link 8</a></li>
+        <li><a href="#">link 9</a></li>
+        <li><a href="#">link 10</a></li>
+    </ul>
+</body>
+</html>
